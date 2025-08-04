@@ -34,6 +34,8 @@ mkdocs serve
 This demo supports a Docs-as-Code workflow — enabling version-controlled, reviewable, and automatically deployable documentation, even when using static site generators without native deployment features.
 
 ## 📄 License
-MIT
+
+This project is licensed under the [MIT License](https://github.com/Mike-4-prog/vue.js-mkdocs-demo/blob/main/LICENSE).
+
 
 
