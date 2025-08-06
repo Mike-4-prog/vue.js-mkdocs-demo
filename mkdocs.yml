@@ -1,0 +1,81 @@
+site_name: Vue.js-clone
+site_url: https://your-site-url.com
+
+theme:
+  name: material
+  logo: assets/vue-logo.png
+  favicon: assets/vue-logo.png
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: green
+    accent: teal
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: green
+    accent: lime
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - search.highlight
+    - search.suggest
+
+extra_css:
+  - css/custom.css
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html 
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction: getting-started/introduction.md
+      - Quick Start: getting-started/quick-start.md
+  - Essentials:
+      - Creating a Vue App: essentials/creating-vue-app.md
+      - Template Syntax: essentials/template-syntax.md
+      - Reactivity Fundamentals: essentials/reactivity-fundamentals.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/vuejs/docs
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/vuejs
+      name: Twitter
+    - icon: fontawesome/brands/discord
+      link: https://chat.vuejs.org/
+      name: Discord
+
+
