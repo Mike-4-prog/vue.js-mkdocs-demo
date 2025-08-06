@@ -3,10 +3,10 @@ name: Deploy MkDocs Site
 on:
   push:
     branches:
-      - main  # deploy only when pushing to main
+      - main
 
 permissions:
-  contents: write  # needed to push to gh-pages branch
+  contents: write
 
 jobs:
   deploy:
@@ -27,5 +27,6 @@ jobs:
           pip install mkdocs mkdocs-material
 
       - name: Build and deploy
-        run: |
-          mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mkdocs gh-deploy --force --remote-name origin
